@@ -1,0 +1,7 @@
+spring:
+  data:
+    mongodb:
+      database: 'mongo-test'
+      uri: 'mongodb://localhost:27017/?directConnection=true'
+    rest:
+      base-path: '/api'
