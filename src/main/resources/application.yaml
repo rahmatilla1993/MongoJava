@@ -18,7 +18,7 @@ comments:
     saveComments: ${comments.url.base}/saveAll
 logging:
   level:
-    org.zalando.logbook: trace
+    org.zalando.logbook: info
 logbook:
   predicate:
     exclude:
