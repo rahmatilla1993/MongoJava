@@ -1,7 +1,25 @@
 spring:
-  data:
-    mongodb:
-      database: 'mongo-test'
-      uri: 'mongodb://localhost:27017/?directConnection=true'
-    rest:
-      base-path: '/api'
+  datasource:
+    username: user
+    password: pass
+    url: jdbc:h2:file:./db
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        use_sql_comments: true
+        format_sql: true
+comments:
+  url:
+    base: 'http://localhost:9595/api/comments'
+    postComments: ${comments.url.base}/{0}/post
+    saveComments: ${comments.url.base}/saveAll
+logging:
+  level:
+    org.zalando.logbook: trace
+logbook:
+  predicate:
+    exclude:
+      - path: /api/posts/comments
