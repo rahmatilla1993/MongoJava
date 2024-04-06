@@ -11,11 +11,15 @@ spring:
       hibernate:
         use_sql_comments: true
         format_sql: true
-comments:
+products:
   url:
-    base: 'http://localhost:9595/api/comments'
-    postComments: ${comments.url.base}/{0}/post
-    saveComments: ${comments.url.base}/saveAll
+    base: 'http://localhost:9090/api/v1/product'
+    list: ${products.url.base}/list
+    get: ${products.url.base}/get/{0}
+    saveAll: ${products.url.base}/saveAll
+    create: ${products.url.base}/create
+    edit: ${products.url.base}/update
+    delete: ${products.url.base}/delete/{0}
 logging:
   level:
     org.zalando.logbook: info
