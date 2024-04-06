@@ -11,6 +11,8 @@ spring:
       hibernate:
         use_sql_comments: true
         format_sql: true
+posts:
+  url: http://localhost:9088/api/posts/
 products:
   url:
     base: 'http://localhost:9090/api/v1/product'
