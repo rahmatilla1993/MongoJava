@@ -11,8 +11,8 @@
     <groupId>com.example</groupId>
     <artifactId>MongoJava</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>MongoJava</name>
-    <description>MongoJava</description>
+    <name>SpringBootAdvanced</name>
+    <description>SpringBootAdvanced</description>
     <properties>
         <java.version>17</java.version>
     </properties>
