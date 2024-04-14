@@ -1,23 +1,24 @@
-package com.example.springbootadvanced.user;
+package com.example.springbootadvanced.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
 
-@Getter
-@Setter
+import java.time.LocalDateTime;
+
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
 @Entity
-@Table(name = "users")
 @ToString
+@Table(name = "users")
 public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String username;
-    private String email;
     private String password;
-    private String otp;
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
 }

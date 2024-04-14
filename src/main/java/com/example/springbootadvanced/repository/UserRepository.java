@@ -1,5 +1,6 @@
-package com.example.springbootadvanced.user;
+package com.example.springbootadvanced.repository;
 
+import com.example.springbootadvanced.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

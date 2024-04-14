@@ -1,4 +1,4 @@
-package com.example.springbootadvanced.user;
+package com.example.springbootadvanced.dto;
 
 import lombok.*;
 
@@ -7,9 +7,8 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@ToString
 public class UserCreateDto {
-
     private String username;
-    private String email;
     private String password;
 }
